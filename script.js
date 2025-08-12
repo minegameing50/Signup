@@ -1,21 +1,25 @@
-function validateSignup(event) {
-    event.preventDefault(); // stop default form submit
+function validateForm() {
+  const mobile = document.getElementById("mobile").value.trim();
+  const otp = document.getElementById("otp").value.trim();
+  const password = document.getElementById("password").value;
 
-    let password = document.getElementById("password").value;
-    let errorMsg = document.getElementById("error-msg");
+  // Validate mobile number
+  if (!/^\d{10}$/.test(mobile)) {
+    alert("Mobile number must be exactly 10 digits.");
+    return false;
+  }
 
-    if (password.length < 6) {
-        errorMsg.textContent = "Password must be at least 6 characters.";
-        errorMsg.style.color = "red";
-        return false; // stop form submit
-    } else {
-        errorMsg.textContent = "";
-        // Fast redirect
-        window.location.href = "https://minegameing50.github.io/Login-Page/";
-        return true;
-    }
-}
+  // Validate OTP
+  if (!/^\d{4}$/.test(otp)) {
+    alert("OTP must be exactly 4 digits.");
+    return false;
+  }
 
-function fastRedirect(url) {
-    window.location.href = url;
+  // Validate password
+  if (password.length < 6) {
+    alert("Password must be at least 6 characters long.");
+    return false;
+  }
+
+  return true; // All validations passed
 }
