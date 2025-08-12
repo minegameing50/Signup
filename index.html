@@ -7,22 +7,22 @@
   <body>
     <div class="Signup-box">
       <h2>Signup</h2>
-      <form onsubmit="return validateForm()">
+      <form onsubmit="return validateSignup()">
       <label>Full name</label><br>
-      <input type="text" class="username" placeholder="Full name" required><br>
+      <input type="text" class="username" id="fullname" placeholder="Full name" required><br>
 <label>Username</label><br>
-      <input type="text" class="username" placeholder="Username" required><br>
+      <input type="text" class="username" id="username" placeholder="Username" required><br>
  <label>Email ID</label><br>
-      <input type="text" class="username" placeholder="Email id" required><br>
+      <input type="email" class="username" id="email" placeholder="Email id" required><br>
 <label>Mobile No.</label><br>
       <input type="number" class="username" id="mobile" placeholder="Mobile No." required><br>
 <label>OTP</label><br>
       <input type="number" class="OTP" id="otp" placeholder="OTP" required>
-      <input type="submit" class="GetOTP" value="Get OTP"><br>
+      <button type="text" class="GetOTP" >Get OTP</button><br>
 <label>Password</label><br>
       <input type="password" class="password" id="password" placeholder="Password" required><br><br>
       <a class="L" href="https://minegameing50.github.io/Login-Page/">Login</a><br><br>
-      <input type="submit" class="submit" value="Signup">
+      <button type="submit" class="submit">Signup</button>
       </form>
     </div>
       <script src="script.js"></script>
