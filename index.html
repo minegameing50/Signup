@@ -7,7 +7,7 @@
   <body>
     <div class="Signup-box">
       <h2>Signup</h2>
-      <form onsubmit="return validateForm(event)">
+      <form onsubmit="return validateForm()">
       <label>Full name</label><br>
       <input type="text" class="username" placeholder="Full name" required><br>
 <label>Username</label><br>
@@ -15,7 +15,7 @@
  <label>Email ID</label><br>
       <input type="text" class="username" placeholder="Email id" required><br>
 <label>Mobile No.</label><br>
-      <input type="number" class="username" id="mobilr" placeholder="Mobile No." required><br>
+      <input type="number" class="username" id="mobile" placeholder="Mobile No." required><br>
 <label>OTP</label><br>
       <input type="number" class="OTP" id="otp" placeholder="OTP" required>
       <input type="submit" class="GetOTP" value="Get OTP"><br>
@@ -24,7 +24,6 @@
       <a class="L" href="https://minegameing50.github.io/Login-Page/">Login</a><br><br>
       <input type="submit" class="submit" value="Signup">
       </form>
-      <div class="error" id="error-msg"></div>
     </div>
       <script src="script.js"></script>
   </body>
