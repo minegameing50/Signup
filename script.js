@@ -1,4 +1,6 @@
-function validateSignup() {
+function validateSignup(event) {
+    event.preventDefault(); // Stop form from submitting
+
     const fullName = document.getElementById("fullname").value.trim();
     const username = document.getElementById("username").value.trim();
     const email = document.getElementById("email").value.trim();
@@ -43,5 +45,8 @@ function validateSignup() {
         return false;
     }
 
-    return true; // ✅ Passed all validations
+    // ✅ Passed all validations
+    alert("Signup successful!");
+    window.location.href = "https://yourwebsite.com/welcome.html"; // Change link to your target page
+    return true;
 }
