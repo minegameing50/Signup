@@ -7,7 +7,7 @@
   <body>
     <div class="Signup-box">
       <h2>Signup</h2>
-      <form onsubmit="return validateSignup()">
+      <form onsubmit="validateSignup(event)">
       <label>Full name</label><br>
       <input type="text" class="username" id="fullname" placeholder="Full name" required><br>
 <label>Username</label><br>
@@ -22,7 +22,7 @@
 <label>Password</label><br>
       <input type="password" class="password" id="password" placeholder="Password" required><br><br>
       <a class="L" href="https://minegameing50.github.io/Login-Page/">Login</a><br><br>
-      <a href="https://minegameing50.github.io/Login-Page/"><button "type="submit" class="submit">Signup</button></a>
+      <button type="submit" class="submit">Signup</button>
       </form>
     </div>
       <script src="script.js"></script>
