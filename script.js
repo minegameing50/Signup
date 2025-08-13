@@ -66,8 +66,8 @@ function validateSignup(event) {
     }
 
     // OTP
-    if (!/^\d{4}$/.test(otp)) {
-        alert("OTP must be exactly 4 digits.");
+    if (otp !== generatedOTP) {
+        alert("Invalid OTP.");
         return false;
     }
 
@@ -79,6 +79,6 @@ function validateSignup(event) {
 
     // ✅ Passed all validations
     alert("Signup successful!");
-    window.location.href = "https://minegameing50.github.io/Login-Page/"; // Change link to your target page
+    window.location.href = "https://yourwebsite.com/welcome.html"; // Change this to your redirect page
     return true;
-}
+            }
