@@ -79,6 +79,6 @@ function validateSignup(event) {
 
     // ✅ Passed all validations
     alert("Signup successful!");
-    window.location.href = "https://yourwebsite.com/welcome.html"; // Change this to your redirect page
+    window.location.href = "https://minegameing50.github.io/Login-Page/"; // Change this to your redirect page
     return true;
             }
